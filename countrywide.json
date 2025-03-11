@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "country": "by",
+        "ISO 3166": {
+            "alpha2": "SE",
+            "country": "Sweden"
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "data": "https://data.openaddresses.io/cache/uploads/sergiyprotsiv/1567f2/se_address_points.csv.zip",
+                "website": "https://geotorget.lantmateriet.se",
+                "protocol": "http",
+                "compression": "zip",
+                "license": {
+                    "text": "CC-BY 4.0",
+                    "url": "https://creativecommons.org/licenses/by/4.0/",
+                    "attribution": true,
+                    "attribution name": "©Lantmäteriet"
+                },
+                "conform": {
+                    "format": "csv",
+                    "city": "kommunnamn",
+                    "street": "adressomrade_faststalltnamn",
+                    "number": {
+                        "function": "join",
+                        "fields": [
+                            "adressplatsnummer",
+                            "bokstavstillagg"
+                        ],
+                        "separator": ""
+                    },
+                    "district": "distriktsnamn",
+                    "region": "region",
+                    "lat": "y",
+                    "lon": "x"
+                }
+            }
+        ]
+    }
+}

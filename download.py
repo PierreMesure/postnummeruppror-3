@@ -31,10 +31,14 @@ def get_gpkg(link):
     with zipfile.ZipFile(io.BytesIO(response.content)) as zip_file:
         for file in zip_file.namelist():
             if file.endswith(".gpkg"):
+                # Save the file to tmp directory
+                tmp_file_path = os.path.join(tmp_folder, file)
+                with zip_file.open(file) as zf:
+                    with open(tmp_file_path, 'wb') as f:
+                        f.write(zf.read())
                 return zip_file.open(file).read()
 
     return None
-
 
 gdfs = []
 
