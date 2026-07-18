@@ -1,5 +1,0 @@
-geopandas
-pyogrio
-pyarrow
-pandas
-xlrd

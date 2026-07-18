@@ -1,7 +1,0 @@
-__pycache__
-.env
-tmp/
-*.csv
-*.parquet
-*.xlsx
-*.zip
