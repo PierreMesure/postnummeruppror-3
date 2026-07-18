@@ -1,0 +1,25 @@
+[project]
+name = "swedish-addresses"
+version = "0.1.0"
+description = "Build a postcode and coordinate parquet file from Geotorget address data."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.1.2",
+    "geotorget @ git+https://github.com/PierreMesure/geotorget-py.git",
+    "pyarrow>=18",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+download-addresses = "swedish_addresses.download:main"
+
+[build-system]
+requires = ["uv_build>=0.11.29,<0.12"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
