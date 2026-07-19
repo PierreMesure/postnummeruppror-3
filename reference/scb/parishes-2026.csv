@@ -1,0 +1,1257 @@
+parish_code,parish_name,municipality_code
+011401,Ed,0114
+011402,Hammarby,0114
+011403,Fresta,0114
+011501,Vallentuna,0115
+011507,Össeby,0115
+011702,Österåker-Östra Ryd,0117
+011703,Ljusterö-Kulla,0117
+012001,Värmdö,0120
+012003,"Djurö, Möja och Nämdö",0120
+012006,Gustavsberg-Ingarö,0120
+012304,Järfälla,0123
+012501,Adelsö-Munsö,0125
+012503,Ekerö,0125
+012504,Lovö,0125
+012509,Färingsö,0125
+012601,Huddinge-Segeltorp,0126
+012602,Trångsund-Skogås,0126
+012604,Flemmingsberg-Vårby,0126
+012701,Botkyrka,0127
+012702,Grödinge,0127
+012801,Salem,0128
+013601,Österhaninge,0136
+013605,Dalarö-Ornö-Utö,0136
+013606,Västerhaninge-Muskö,0136
+013801,Tyresö,0138
+013901,Bro,0139
+013903,Kungsängen-Västra Ryd,0139
+014001,Turinge-Taxinge,0140
+016001,Täby,0160
+016201,Danderyd,0162
+016301,Sollentuna,0163
+018001,Stockholms domkyrkoförs.,0180
+018004,S:t Johannes,0180
+018005,Adolf Fredrik,0180
+018006,Gustav Vasa,0180
+018007,S:t Matteus,0180
+018009,Engelbrekt,0180
+018011,Hedvig Eleonora och Oscar,0180
+018013,Maria Magdalena,0180
+018014,Högalid,0180
+018015,Katarina,0180
+018017,Sofia,0180
+018019,Västermalm,0180
+018021,Brännkyrka,0180
+018023,Vantör,0180
+018025,Farsta,0180
+018027,Bromma,0180
+018029,Västerled,0180
+018031,Vällingby,0180
+018034,Enskede-Årsta,0180
+018036,Skarpnäck,0180
+018038,Hässelby,0180
+018039,Hägersten,0180
+018040,Skärholmen,0180
+018041,Spånga-Kista,0180
+018090,Hovförsamlingen,0180
+018092,Tyska S:ta Gertrud,0180
+018093,Finska,0180
+018101,Södertälje,0181
+018102,Östertälje,0181
+018104,Enhörna,0181
+018106,Vårdinge,0181
+018107,Överjärna,0181
+018108,Ytterjärna,0181
+018110,Hölö-Mörkö,0181
+018201,Nacka,0182
+018202,Saltsjöbaden,0182
+018203,Boo,0182
+018301,Sundbyberg,0183
+018401,Solna,0184
+018601,Lidingö,0186
+018701,Vaxholm,0187
+018801,Norrtälje-Malsta,0188
+018803,Väddö,0188
+018805,Häverö-Edebo,0188
+018808,Edsbro-Ununge,0188
+018809,Fasterna,0188
+018810,Rimbo,0188
+018812,"Husby, Skederid och Rö",0188
+018814,Gottröra,0188
+018815,Närtuna,0188
+018817,Lohärad,0188
+018818,Estuna och Söderby-Karl,0188
+018820,Roslagsbro-Vätö,0188
+018822,Rådmansö,0188
+018823,Frötuna,0188
+018824,Blidö,0188
+018825,Länna,0188
+018826,Riala,0188
+019101,Sigtuna,0191
+019106,Husby-Ärlinghundra,0191
+019108,Norrsunda,0191
+019109,Skepptuna,0191
+019112,Valsta,0191
+019201,Nynäshamn,0192
+019202,Sorunda,0192
+019204,Ösmo-Torö,0192
+030501,Kalmar-Yttergran,0305
+030503,Övergran,0305
+030504,Häggeby,0305
+030505,Skokloster,0305
+031902,Älvkarleby-Skutskär,0319
+033001,Knivsta,0330
+033002,Östuna,0330
+033003,Husby-Långhundra,0330
+033004,Lagga,0330
+033005,Alsike,0330
+033006,Vassunda,0330
+033101,Västerlövsta,0331
+033102,Huddunge,0331
+033103,Enåker,0331
+033104,Vittinge,0331
+033105,Nora,0331
+033106,Östervåla,0331
+033107,Harbo,0331
+036001,Tolfta,0360
+036003,Vendel-Tegelsmora,0360
+036005,Tierp-Söderfors,0360
+036007,Västland,0360
+036008,Hållnäs-Österlövsta,0360
+038001,Uppsala domkyrkoförs.,0380
+038002,Helga Trefaldighet,0380
+038003,Gamla Uppsala,0380
+038004,Vaksala,0380
+038005,Danmark-Funbo,0380
+038007,Hagby,0380
+038008,Ramsta,0380
+038009,Balingsta,0380
+038010,Västeråker,0380
+038011,Dalby,0380
+038012,Uppsala-Näs,0380
+038014,Norra Hagunda,0380
+038021,Bälingebygden,0380
+038022,Skuttunge,0380
+038023,Tensta,0380
+038024,Lena,0380
+038025,Ärentuna,0380
+038026,Björklinge,0380
+038027,Viksta,0380
+038028,Knutby-Bladåker,0380
+038030,Faringe,0380
+038031,Almunge,0380
+038038,Gottsunda,0380
+038039,Stavby,0380
+038040,Tuna,0380
+038041,Rasbo-Rasbokil,0380
+038101,Enköping,0381
+038105,Tillinge och Södra Åsunda,0381
+038107,Sparrsätra-Bred,0381
+038111,Boglösa,0381
+038114,Veckholm,0381
+038117,Villberga,0381
+038130,Lagunda,0381
+038131,Fjärdhundra,0381
+038204,Frösåker,0382
+038207,Öregrund-Gräsö,0382
+038209,Alunda,0382
+038210,Ekeby,0382
+038211,Skäfthammar-Hökhuvud,0382
+038213,Dannemorabygden,0382
+042801,Västra Vingåker,0428
+042802,Österåker,0428
+046101,Frustuna,0461
+046104,Daga,0461
+048002,Nyköping,0480
+048005,Tunaberg,0480
+048007,Kiladalen,0480
+048010,Stigtomta-Vrena,0480
+048019,Rönö,0480
+048020,Tystbergabygden,0480
+048101,Oxelösund,0481
+048201,"Flen, Helgesta-Hyltinge",0482
+048205,Dunker-Lilla Malma,0482
+048207,Mellösa,0482
+048208,Bettna,0482
+048301,Katrineholmsbygden,0483
+048302,Björkvik,0483
+048402,S:t Johannes,0484
+048403,Torshälla,0484
+048410,Hällby förs. med Tumbo och Råby-Rekarne,0484
+048413,Västra Rekarne,0484
+048417,Näshulta,0484
+048418,Husby-Rekarne,0484
+048420,Stenkvista-Ärla,0484
+048421,Kafjärden,0484
+048422,Tunafors,0484
+048423,S:t Ansgar,0484
+048601,Strängnäs domkyrkoförs. med Aspö,0486
+048604,Mariefred,0486
+048606,Åker-Länna,0486
+048607,Stallarholmen,0486
+048614,Vårfruberga-Härad,0486
+048802,Trosa,0488
+050902,Ödeshög,0509
+051201,Norra Ydre,0512
+051203,Sund-Svinhult,0512
+051204,Västra Ryd,0512
+051301,Tidersrum,0513
+051302,Kisa,0513
+051303,Västra Eneby,0513
+051304,Horn,0513
+051305,Hycklinge,0513
+051309,Rimforsa,0513
+056002,Boxholm,0560
+056101,Åtvid,0561
+056201,Finspång,0562
+056301,Valdemarsvik,0563
+056302,Ringarum,0563
+058001,Linköpings domkyrkoförs.,0580
+058002,Linköpings S:t Lars,0580
+058003,Landeryd,0580
+058004,Slaka,0580
+058005,Kärna,0580
+058008,Vist,0580
+058009,Vårdnäs,0580
+058010,Skeda,0580
+058011,Nykil-Gammalkil,0580
+058012,Ulrika,0580
+058018,Vikingstad,0580
+058019,Vreta kloster,0580
+058024,Åkerbo,0580
+058033,Linköpings Berga,0580
+058034,Linköpings Johannelund,0580
+058035,Linköpings Skäggetorp,0580
+058036,Linköpings Ryd,0580
+058037,Gottfridsberg,0580
+058038,Lambohov,0580
+058039,Tannefors,0580
+058102,Norrköpings S:t Olof,0581
+058104,Kolmården,0581
+058105,Norrköpings Borg,0581
+058106,Norrköpings S:t Johannes,0581
+058119,Västra Vikbolandet,0581
+058125,Östra Husby,0581
+058127,Jonsberg,0581
+058201,Söderköping S:t Anna,0582
+058204,Östra Ryd,0582
+058301,Motala,0583
+058303,Västra Ny,0583
+058304,Godegård,0583
+058306,Borensberg,0583
+058307,Klockrike,0583
+058309,Fornåsa,0583
+058322,Tjällmo,0583
+058324,Aska,0583
+058401,Vadstena,0584
+058408,Dal,0584
+058601,Mjölby,0586
+058603,Skänninge,0586
+058612,Väderstad,0586
+058616,Östra Tollstad,0586
+058618,Vifolka,0586
+060402,Aneby,0604
+060403,Askeryd,0604
+060405,Frinnaryd,0604
+060406,Lommaryd,0604
+060408,Haurida-Vireda,0604
+061701,Källeryd,0617
+061702,Åsenhöga,0617
+061703,Kävsjö,0617
+061704,Kulltorp,0617
+061705,Gnosjö,0617
+064203,Mullsjö-Sandhem,0642
+064301,Habo,0643
+064302,Gustav Adolf,0643
+064303,Brandstorp,0643
+066201,Gislaved,0662
+066204,Anderstorp,0662
+066208,Norra Hestra,0662
+066209,Villstad,0662
+066210,Burseryd,0662
+066216,Västbo S:t Sigfrid,0662
+066501,Byarum-Bondstorp,0665
+066503,Skillingaryd,0665
+066506,Svenarum,0665
+068002,Jönköping,0680
+068005,Huskvarna,0680
+068006,Hakarp,0680
+068007,Gränna,0680
+068008,Norrahammar,0680
+068009,Visingsö,0680
+068010,Skärstad-Ölmstad,0680
+068014,Lekeryd,0680
+068015,Rogberga-Öggestorp,0680
+068016,Barnarp-Ödestugu,0680
+068019,Månsarp,0680
+068020,Bankeryd,0680
+068021,Norra Mo,0680
+068201,Nässjö,0682
+068203,Norra Sandsjö,0682
+068204,Bringetofta,0682
+068205,Norra Solberga-Flisby,0682
+068207,Barkeryd-Forserum,0682
+068209,Malmbäck,0682
+068210,Almesåkra,0682
+068301,Värnamo,0683
+068302,Bredaryd,0683
+068306,Forshedabygden,0683
+068309,Tånnö,0683
+068310,Voxtorp,0683
+068311,Gällaryd,0683
+068312,Rydaholm,0683
+068401,Sävsjö,0684
+068403,Vrigstad-Hylletofta,0684
+068406,Stockaryd,0684
+068501,Vetlanda,0685
+068509,Korsberga,0685
+068514,"Nye, Näshult och Stenberga",0685
+068515,Alseda,0685
+068521,Lannaskede,0685
+068524,Ekenässjön,0685
+068601,Eksjö,0686
+068602,Hässleby-Kråkshult,0686
+068605,Ingatorp-Bellö,0686
+068606,Hult-Edshult,0686
+068608,Mellby,0686
+068609,Höreda,0686
+068701,Säby,0687
+068702,Adelöv,0687
+068703,Linderås,0687
+076001,Åseda,0760
+076003,Lenhovda-Herråkra,0760
+076004,Nottebäck,0760
+076005,Älghult,0760
+076102,Lessebo,0761
+076301,Tingsås,0763
+076302,Almundsryd,0763
+076303,Älmeboda,0763
+076304,Linneryd,0763
+076305,Södra Sandsjö,0763
+076306,Väckelsång,0763
+076307,Urshult,0763
+076401,Alvesta,0764
+076405,Moheda,0764
+076406,Slätthög-Mistelås,0764
+076409,Vislanda-Blädinge,0764
+076410,Skatelöv,0764
+076411,Västra Torsås,0764
+076501,Älmhult,0765
+076503,Virestad-Härlunda,0765
+076504,Stenbrohult,0765
+076505,Göteryd,0765
+076506,Pjätteryd,0765
+076507,Hallaryd,0765
+076701,Markaryd,0767
+076702,Hinneryd,0767
+076703,Traryd,0767
+078001,Växjö stads- och domkyrkoförs.,0780
+078003,Sjösås,0780
+078006,Dädesjö,0780
+078007,Hemmesjö-Furuby,0780
+078008,Ingelstad,0780
+078015,"Tävelsås, Vederslöv och Kalvsvik",0780
+078016,Gemla,0780
+078018,Öjaby,0780
+078020,Gårdsby,0780
+078021,Söraby,0780
+078024,Lammhult,0780
+078101,Ljungby,0781
+078102,Agunnaryd,0781
+078103,Ryssby,0781
+078104,Tutaryd,0781
+078107,Södra Ljunga,0781
+078108,Berga,0781
+078110,Dörarp-Vittaryd,0781
+078111,Angelstad,0781
+078112,Annerstad,0781
+078114,Torpa,0781
+078115,Vrå,0781
+078116,Lidhult,0781
+078117,Odensjö,0781
+078118,Bolmsö-Tannåker,0781
+078120,Ljungby Maria,0781
+082101,Fågelfors,0821
+082102,Högsby,0821
+082103,Långemåla,0821
+082104,Fagerhult,0821
+083401,Gullabo,0834
+083402,Torsås,0834
+083404,Söderåkra,0834
+084001,Resmo-Vickleby,0840
+084003,Mörbylånga-Kastlösa,0840
+084005,Hulterstad-Stenåsa,0840
+084008,Sydöland,0840
+084014,Glömminge-Algutsrum,0840
+084015,Torslunda,0840
+084016,"Norra Möckleby, Sandby och Gårdby",0840
+086001,Hultsfred,0860
+086002,Lönneberga,0860
+086003,Målilla med Gårdveda,0860
+086004,Järeda,0860
+086005,Virserum,0860
+086006,Vena,0860
+086008,Mörlunda-Tveta,0860
+086101,Mönsterås,0861
+086102,Fliseryd,0861
+086103,Ålem,0861
+086201,Emmaboda,0862
+086202,Vissefjärda,0862
+086203,Algutsboda,0862
+086204,Långasjö,0862
+088001,Kalmar domkyrkoförs.,0880
+088002,Förlösa-Kläckeberga,0880
+088003,Dörby,0880
+088004,Hossmo,0880
+088005,Ryssby,0880
+088006,Åby,0880
+088008,Ljungby,0880
+088009,Arby-Hagby,0880
+088011,Halltorp-Voxtorp,0880
+088013,Karlslunda-Mortorp,0880
+088015,Kalmar S:t Johannes,0880
+088016,Heliga Korset,0880
+088017,S:ta Birgitta,0880
+088018,Två systrar,0880
+088101,Nybro-S:t Sigfrid,0881
+088102,Kråksmåla,0881
+088103,Bäckebo,0881
+088104,Kristvalla,0881
+088105,Madesjö,0881
+088106,Örsjö,0881
+088108,Oskar,0881
+088109,Hälleberga,0881
+088201,Oskarshamn,0882
+088203,Misterhult,0882
+088205,Döderhult,0882
+088301,Västervik,0883
+088302,Törnsfall,0883
+088303,Gladhammar-Västrum,0883
+088305,Ukna,0883
+088306,Dalhem,0883
+088307,Överum,0883
+088308,Västra Ed,0883
+088309,Loftahammar,0883
+088310,Lofta,0883
+088311,Gamleby,0883
+088312,Odensvi,0883
+088314,Hallingeberg-Blackstad,0883
+088315,Hjorted,0883
+088401,Vimmerby,0884
+088403,Rumskulla,0884
+088404,Pelarne,0884
+088405,Frödinge,0884
+088406,Locknevi,0884
+088408,Södra Vi-Djursdala,0884
+088409,Tuna,0884
+088501,Borgholm,0885
+088502,Föra-Alböke-Löt,0885
+088507,Köpingsvik,0885
+088509,Räpplinge-Högsrum,0885
+088510,"Gärdslösa, Långlöt och Runsten",0885
+088514,Nordöland,0885
+098001,Visby domkyrkoförs.,0980
+098002,Othem-Boge,0980
+098004,Fårö,0980
+098005,"Bunge, Rute och Fleringe",0980
+098010,Forsa,0980
+098015,Stenkyrka,0980
+098018,Väskinde,0980
+098025,Gothem,0980
+098029,Dalhem,0980
+098030,Barlingbo,0980
+098031,Endre,0980
+098032,Hejdeby,0980
+098033,Follingbo,0980
+098034,Akebäck,0980
+098035,Roma,0980
+098036,Björke,0980
+098040,Vänge,0980
+098047,Östergarn,0980
+098048,Stenkumla,0980
+098050,"Vall, Hogrän och Atlingbo",0980
+098055,Eskelhem-Tofta,0980
+098057,"Sanda, Västergarn och Mästerby",0980
+098059,Hejde-Väte,0980
+098061,Klinte,0980
+098062,Fröjel,0980
+098063,Eksta,0980
+098064,Sproge,0980
+098065,Garde,0980
+098071,När-Lau,0980
+098073,Stånga-Burs,0980
+098074,Lojsta,0980
+098075,Linde,0980
+098076,"Alva, Hemse och Rone",0980
+098079,Fardhem,0980
+098080,Gerum,0980
+098081,Levide,0980
+098084,Havdhem,0980
+098089,Hoburg,0980
+106002,Jämshög,1060
+106003,Kyrkhult,1060
+108001,Karlskrona-Aspö,1080
+108002,Karlskrona amiralitetsförs.,1080
+108006,Lyckå,1080
+108008,Kristianopel,1080
+108009,Jämjö,1080
+108010,Torhamn,1080
+108011,Sturkö,1080
+108012,Ramdala,1080
+108014,Rödeby,1080
+108015,Fridlevstad,1080
+108018,Nättraby-Hasslö,1080
+108101,Ronneby,1081
+108110,Bräkne-Hoby,1081
+108201,Karlshamn,1082
+108205,Asarum-Ringamåla,1082
+108206,Mörrum-Elleholm,1082
+108301,Sölvesborg,1083
+108304,Mjällby,1083
+121402,Svalöv,1214
+121405,Kågeröd-Röstånga,1214
+121408,Billeberga-Sireköpinge,1214
+121410,Teckomatorp,1214
+123006,Uppåkra,1230
+123013,S:t Staffan,1230
+123101,Burlöv,1231
+123304,Vellinge-Månstorp,1233
+123305,Skanör-Falsterbo,1233
+123309,Höllviken,1233
+125601,Knislinge-Gryt,1256
+125603,Kviinge,1256
+125604,Glimåkra-Hjärsås,1256
+125606,Broby-Emmislöv,1256
+125701,Örkelljunga,1257
+125702,Rya,1257
+125703,Skånes-Fagerhult,1257
+126001,Bjuv,1260
+126101,Kävlinge,1261
+126103,Dösjebro,1261
+126104,Lackalänga-Stävie,1261
+126112,Löddebygden,1261
+126201,Lomma,1262
+126205,Bjärred,1262
+126301,Svedala,1263
+126307,Värby,1263
+126401,Skurup,1264
+126406,Skivarp,1264
+126412,Villie,1264
+126503,Sjöbo,1265
+126505,Blentarp,1265
+126510,Lövestad,1265
+126511,Vollsjö,1265
+126602,Hörby,1266
+126702,Höör,1267
+126704,Ringsjö,1267
+127005,Tomelillabygden,1270
+127009,Smedstorp,1270
+127014,Brösarp-Tranås,1270
+127201,Ivetofta-Gualöv,1272
+127203,Näsum,1272
+127301,Osby-Visseltofta,1273
+127302,Örkened,1273
+127303,Loshult,1273
+127501,Perstorp,1275
+127601,Klippan,1276
+127605,Riseberga-Färingtofta,1276
+127607,Östra Ljungby,1276
+127701,Björnekulla-Västra Broby,1277
+127703,Kvidinge,1277
+127801,Båstad-Östra Karup,1278
+127802,Förslöv-Grevie,1278
+127804,Västra Karup-Hov,1278
+127806,Torekov,1278
+128002,Malmö S:t Petri,1280
+128006,Malmö S:t Johannes,1280
+128007,Limhamn,1280
+128008,Fosie,1280
+128010,Husie,1280
+128016,Hyllie,1280
+128101,Lunds domkyrkoförs.,1281
+128102,S:t Peters kloster,1281
+128104,Lunds Allhelgonaförs.,1281
+128105,Norra Nöbbelöv,1281
+128113,Södra Sandby,1281
+128116,Dalby,1281
+128120,Genarp,1281
+128121,Veberöd,1281
+128124,Helgeand,1281
+128125,Lunds östra stadsförs.,1281
+128127,Torn,1281
+128201,Landskrona,1282
+128204,Häljarp,1282
+128301,Helsingborgs Maria,1283
+128302,Helsingborgs Gustav Adolf,1283
+128303,Raus,1283
+128305,Välinge-Kattarp,1283
+128306,Allerum,1283
+128307,Fleninge,1283
+128309,Kropp,1283
+128316,Kvistofta,1283
+128401,Höganäs,1284
+128402,Väsby,1284
+128403,Viken,1284
+128404,Brunnby,1284
+128405,Farhult-Jonstorp,1284
+128501,Eslöv,1285
+128502,Östra Onsjö,1285
+128511,Marieholm,1285
+128601,Ystad-Sövestad,1286
+128605,Ljunits,1286
+128611,Stora Köpinge,1286
+128617,Löderup,1286
+128701,Trelleborg,1287
+128706,Hammarlöv,1287
+128715,Dalköpinge,1287
+128721,Källstorp,1287
+128731,Anderslöv,1287
+129001,Kristianstads Heliga Trefaldighet,1290
+129002,Norra Åsum,1290
+129005,Träne-Djurröd,1290
+129007,Vä-Skepparslöv,1290
+129008,Köpinge,1290
+129009,Nosaby,1290
+129014,Araslöv,1290
+129015,Åhus,1290
+129024,Fjälkinge,1290
+129029,Degeberga-Everöd,1290
+129032,Tollarp,1290
+129035,Oppmanna-Vånga,1290
+129101,Simrishamn,1291
+129107,Gärsnäs,1291
+129119,Kivik,1291
+129201,Ängelholm,1292
+129205,Munka Ljungby,1292
+129206,Strövelstorp,1292
+129209,Barkåkra,1292
+129211,Hjärnarp-Tåstarp,1292
+129301,Hässleholm,1293
+129305,Vinslöv,1293
+129310,Farstorp,1293
+129311,Verum,1293
+129312,Vittsjö,1293
+129313,Norra Åkarp,1293
+129314,Vankiva,1293
+129315,Sösdala,1293
+129319,Tyringe,1293
+131501,Torup,1315
+131504,Långaryd,1315
+131505,Färgaryd,1315
+131506,Femsjö,1315
+131507,Unnaryd,1315
+138002,Halmstad,1380
+138003,Snöstorp,1380
+138005,Oskarström,1380
+138009,Söndrum-Vapnö,1380
+138011,Harplinge-Steninge,1380
+138014,Getinge-Rävinge,1380
+138015,Slättåkra-Kvibille,1380
+138019,Enslöv,1380
+138101,Laholm,1381
+138103,Hasslöv-Våxtorp,1381
+138105,Skummeslöv,1381
+138107,Ränneslöv-Ysby,1381
+138109,Knäred-Hishult,1381
+138111,Veinge-Tjärby,1381
+138201,Falkenberg,1382
+138202,Skrea,1382
+138206,Susedalen,1382
+138208,Stafsinge,1382
+138209,Morup,1382
+138211,Vinberg-Ljungby,1382
+138213,Vessige,1382
+138217,Okome,1382
+138220,Gunnarp,1382
+138221,Fagered,1382
+138222,Källsjö,1382
+138223,Ullared,1382
+138224,Älvsered,1382
+138301,Varberg,1383
+138302,Träslöv,1383
+138305,Himledalen,1383
+138310,Sibbarp-Dagsås,1383
+138311,Tvååker,1383
+138312,Spannarp,1383
+138313,Lindberga,1383
+138319,Veddige-Kungsäter,1383
+138320,Värö-Stråvalla,1383
+138401,Kungsbacka-Hanhals,1384
+138402,Tölö,1384
+138403,Älvsåker,1384
+138404,Vallda,1384
+138405,Släp,1384
+138406,Frillesås,1384
+138407,Landa,1384
+138408,Ölmevalla,1384
+138409,Gällinge,1384
+138410,Idala,1384
+138412,Fjärås-Förlanda,1384
+138414,Onsala,1384
+138415,Kullavik,1384
+140101,Härryda,1401
+140102,Landvetter,1401
+140103,Råda,1401
+140104,Björketorp,1401
+140201,Partille,1402
+140203,Sävedalen,1402
+140204,Furulund-Öjersjö,1402
+140701,Öckerö,1407
+141502,Norum,1415
+141503,Ödsmål,1415
+141504,Spekeröd-Ucklum,1415
+141505,Jörlanda,1415
+141901,Valla,1419
+141902,Stenkyrka,1419
+141903,Rönnäng,1419
+141905,Klövedal,1419
+142101,Tegneby,1421
+142102,Röra,1421
+142103,Stala,1421
+142104,Långelanda,1421
+142105,Myckleby,1421
+142106,Torp,1421
+142110,Morlanda,1421
+142701,Södra Sotenäs,1427
+142705,Hunnebostrand,1427
+142706,Tossene,1427
+143001,Munkedal,1430
+143502,Tanum,1435
+143503,Lur,1435
+143504,Naverstad-Mo,1435
+143506,Kville,1435
+143507,Fjällbacka,1435
+143508,Bottna,1435
+143509,Svenneby,1435
+143803,Dals-Ed,1438
+143901,Färgelanda-Högsäter,1439
+144001,Nödinge,1440
+144003,Skepplanda-Hålanda,1440
+144005,Starrkärr-Kilanda,1440
+144101,Lerum,1441
+144102,Skallsjö,1441
+144103,Stora Lundby,1441
+144104,Östad,1441
+144201,Lena,1442
+144206,Hol,1442
+144208,Nårunga,1442
+144210,Asklanda,1442
+144214,Algutstorp,1442
+144301,Töllsjö,1443
+144302,Bollebygd,1443
+144403,Särestad,1444
+144408,Flo,1444
+144409,Tengene,1444
+144410,Trökörna,1444
+144412,Fridhem,1444
+144502,Främmestad-Bäreberg,1445
+144504,Essunga,1445
+144601,Karlsborg,1446
+144602,Brevik,1446
+144603,Mölltorp,1446
+144604,Undenäs,1446
+144701,Amnehärad,1447
+145201,Tranemo,1452
+145206,Länghem,1452
+145208,Dalstorp,1452
+146001,Ärtemark,1460
+146003,Laxarby-Vårvik,1460
+146005,Torrskog,1460
+146006,Steneby,1460
+146101,Mellerud,1461
+146201,Fuxerna-Åsbräcka,1462
+146204,Lödöse,1462
+146206,Västerlanda,1462
+146207,Hjärtum,1462
+146301,Kinna-Fritsla,1463
+146303,Örby-Skene,1463
+146304,Sätila,1463
+146305,Hyssna,1463
+146312,Västra Mark,1463
+146313,Öxnevalla,1463
+146314,Horred,1463
+146315,Istorp,1463
+146316,Älekulla,1463
+146317,Torestorp,1463
+146318,Öxabäck,1463
+146501,Svenljungabygden,1465
+146503,Mjöbäck-Holsljunga,1465
+146506,Kindaholm,1465
+146512,Sexdrega,1465
+146606,Herrljungabygden,1466
+147001,Varabygden,1470
+147101,Husaby,1471
+147102,Götene,1471
+147112,Källby,1471
+147118,Kinnekulle,1471
+147201,Tibro,1472
+147202,Ransberg,1472
+147301,Töreboda,1473
+147302,Fredsberg-Bäck,1473
+147307,Fägre,1473
+147313,Hova-Älgarås,1473
+148001,Domkyrkoförs. i Göteborg,1480
+148004,Nylöse,1480
+148005,Kortedala,1480
+148006,Härlanda,1480
+148007,Göteborgs Vasa,1480
+148008,Göteborgs Johanneberg,1480
+148009,Göteborgs Annedal,1480
+148010,Göteborgs Haga,1480
+148011,Göteborgs Oscar Fredrik,1480
+148012,Göteborgs Masthugg,1480
+148013,Göteborgs Carl Johan,1480
+148016,Örgryte,1480
+148017,Lundby,1480
+148020,Backa,1480
+148021,Högsbo,1480
+148022,Västra Frölunda,1480
+148023,Älvsborg,1480
+148024,Tynnered,1480
+148025,Tyska Christinae,1480
+148028,Torslanda-Björlanda,1480
+148031,Tuve-Säve,1480
+148032,Bergsjön,1480
+148033,Göteborgs S:t Pauli,1480
+148034,Angered,1480
+148036,Askim,1480
+148037,Styrsö,1480
+148038,Björkekärr,1480
+148041,Näset,1480
+148101,Fässberg,1481
+148102,Kållered,1481
+148103,Lindome,1481
+148104,Stensjön,1481
+148201,Kungälv-Ytterby,1482
+148203,Marstrand,1482
+148204,Harestad,1482
+148205,Torsby,1482
+148206,Lycke,1482
+148208,Romelanda,1482
+148209,Kareby,1482
+148210,Hålta,1482
+148211,Solberga,1482
+148401,Lysekils södra,1484
+148405,Lysekils norra,1484
+148501,Uddevalla,1485
+148503,Ljungskile,1485
+148509,Bokenäset,1485
+148510,Herrestad,1485
+148511,Lane-Ryr,1485
+148512,Bäve,1485
+148513,Dalaberg,1485
+148601,Strömstad,1486
+148602,Skee-Tjärnö,1486
+148606,Idefjorden,1486
+148701,Vänersborg och Väne-Ryr,1487
+148704,Brålandabygden,1487
+148706,Frändefors,1487
+148707,Vänersnäs,1487
+148709,Västra Tunhem,1487
+148801,Trollhättan,1488
+148803,Åsaka-Björke,1488
+148804,Gärdhem,1488
+148807,Rommele,1488
+148901,Alingsås,1489
+148908,Bjärke,1489
+148909,Hemsjö,1489
+148910,Ödenäs,1489
+149002,Borås,1490
+149006,Toarp,1490
+149011,Fristad,1490
+149016,Sandhult-Bredared,1490
+149019,Seglora,1490
+149020,Kinnarumma,1490
+149101,Ulricehamn,1491
+149105,Hällstad,1491
+149110,Södra Ving,1491
+149116,Åsunden,1491
+149120,Hössna,1491
+149128,Redväg,1491
+149129,Timmele,1491
+149201,Åmål,1492
+149301,Mariestad,1493
+149303,Ullervad,1493
+149312,Lugnås,1493
+149318,Lyrestad,1493
+149401,Lidköping,1494
+149403,Järpås,1494
+149405,Kållands-Råda,1494
+149413,Sunnersberg,1494
+149424,Sävare,1494
+149431,Örslösa,1494
+149501,Skara domkyrkoförs.,1495
+149508,Valle,1495
+149516,Ardala,1495
+149601,Skövde,1496
+149608,Skultorp,1496
+149614,Sventorp-Forsby,1496
+149615,Värsås-Varola-Vreten,1496
+149617,Väring,1496
+149620,Frösve,1496
+149624,Berg,1496
+149627,Götlunda,1496
+149701,Hjo,1497
+149704,Mofalla,1497
+149706,Fågelås,1497
+149708,Korsberga-Fridene,1497
+149801,Tidaholm,1498
+149803,Hökensås,1498
+149807,Fröjered,1498
+149812,Valstad,1498
+149816,Varv,1498
+149901,Falköping,1499
+149902,Mösseberg,1499
+149905,Floby,1499
+149916,Kinneved,1499
+149921,Åslebygden,1499
+149924,Slöta-Karleby,1499
+149928,Yllestad,1499
+149933,Dala-Borgunda-Högstena,1499
+149934,Stenstorp,1499
+149941,Gudhem,1499
+149947,Hornborga,1499
+149951,Åsarp,1499
+171501,Stora Kil,1715
+171502,Frykerud,1715
+171503,Boda,1715
+173001,Eda,1730
+173003,Järnskog-Skillingmark,1730
+173005,Köla,1730
+173701,Fryksände,1737
+173702,Lekvattnet,1737
+173703,Vitsand,1737
+173705,Östmark,1737
+173708,Övre Älvdal,1737
+176001,Storfors,1760
+176101,Hammarö,1761
+176301,Forshaga-Munkfors,1763
+176401,Grums,1764
+176403,Ed-Borgvik,1764
+176404,Värmskog,1764
+176501,Silbodal,1765
+176502,Sillerud,1765
+176503,Holmedal-Karlanda,1765
+176505,Blomskog,1765
+176506,Trankil,1765
+176507,Västra Fågelvik,1765
+176508,Töcksmark,1765
+176509,Östervallskog,1765
+176601,Sunne,1766
+176602,Västra Ämtervik,1766
+176603,Östra Ämtervik,1766
+176604,Gräsmark,1766
+176605,Lysvik,1766
+178001,Karlstads domkyrkoförs.,1780
+178002,Norrstrand,1780
+178003,Väse-Fågelvik,1780
+178006,Alster-Nyedsbygden,1780
+178008,Grava,1780
+178009,Nor-Segerstad,1780
+178011,Västerstrand,1780
+178101,Kristinehamn,1781
+178201,Filipstad,1782
+178301,Hagfors-Gustav Adolf,1783
+178302,Ekshärad,1783
+178304,Norra Råda-Sunnemo,1783
+178401,Arvika-Ny,1784
+178403,Stavnäs-Högerud,1784
+178407,Gunnarskog,1784
+178409,Älgå-Glava,1784
+178411,Brunskog-Mangskog,1784
+178501,Säffle,1785
+178502,Tveta,1785
+178503,Bro,1785
+178504,Södra Värmlandsnäs,1785
+178508,Ny-Huggenäs,1785
+178509,Gillberga,1785
+178510,Kila,1785
+178511,Svanskog,1785
+178512,Långserud,1785
+181402,Knista,1814
+181405,Edsberg,1814
+186001,Ramundeboda,1860
+186002,Finnerödja-Tived,1860
+186004,Skagershult,1860
+186101,Hallsberg,1861
+186102,Viby,1861
+186104,Sköllersta,1861
+186201,Degerfors-Nysund,1862
+186301,Hällefors-Hjulsjö,1863
+186302,Grythyttan,1863
+186401,Ljusnarsberg,1864
+188001,Örebro Nikolai,1880
+188002,Örebro Olaus Petri,1880
+188003,Längbro,1880
+188004,Almby,1880
+188005,Mosjö-Täby,1880
+188008,Tysslinge,1880
+188013,Axberg,1880
+188015,Asker-Lännäs,1880
+188016,Kvismare,1880
+188027,Glanshammar,1880
+188030,Mikael,1880
+188031,Adolfsberg,1880
+188101,Kumla,1881
+188102,Hardemo,1881
+188103,Ekeby,1881
+188201,Askersund-Hammar,1882
+188203,Lerbäck,1882
+188204,Snavlunda,1882
+188301,Karlskoga,1883
+188404,Nora bergslagsförs.,1884
+188502,Linde bergslag,1885
+188505,Näsby-Fellingsbro,1885
+190402,Skinnskatteberg med Hed och Gunnilbo,1904
+190701,Sura-Ramnäs,1907
+196001,Kungsör,1960
+196101,Hallstahammar-Kolbäck,1961
+196201,Norberg-Karbenning,1962
+198001,Västerås domkyrkoförs.,1980
+198002,Västerås Lundby,1980
+198003,Västerås Badelunda,1980
+198007,Norrbo,1980
+198009,Dingtuna-Lillhärad,1980
+198010,Västerås-Barkarö,1980
+198011,Kungsåra,1980
+198016,Tillberga,1980
+198020,Rytterne,1980
+198022,Skerike,1980
+198023,Önsta,1980
+198024,Viksäng,1980
+198025,Gideonsberg,1980
+198101,Sala,1981
+198102,Västerfärnebo-Fläckebo,1981
+198104,Norrby,1981
+198106,"Kumla, Tärna och Kila",1981
+198108,Möklinta,1981
+198201,Västanfors-Västervåla,1982
+198301,Köpingsbygden,1983
+198304,Malma,1983
+198401,Arbogabygden,1984
+202101,Järna med Nås och Äppelbo,2021
+202302,Malung,2023
+202303,Lima-Transtrand,2023
+202601,Mockfjärd,2026
+202602,Gagnef,2026
+202603,Floda,2026
+202901,Leksand,2029
+202902,Djura,2029
+202903,Åhl,2029
+202904,Siljansnäs,2029
+203101,Rättvik,2031
+203103,Boda,2031
+203104,Ore,2031
+203402,Orsa,2034
+203902,Älvdalen,2039
+203905,Idre-Särna,2039
+206101,Norrbärke,2061
+206102,Söderbärke,2061
+206201,Mora,2062
+208001,Falu Kristine,2080
+208002,Grycksbo,2080
+208003,Stora Kopparberg,2080
+208004,Aspeboda,2080
+208006,Vika-Hosjö,2080
+208007,Sundborn,2080
+208008,Svärdsjö,2080
+208010,Enviken,2080
+208011,Bjursås,2080
+208102,Stora Tuna,2081
+208103,Torsång,2081
+208201,Säterbygden,2082
+208301,"Hedemora, Husby och Garpenberg",2083
+208401,Avesta-Grytnäs,2084
+208403,By,2084
+208404,Folkärna,2084
+208501,Ludvika,2085
+208503,Gränge-Säfsnäs,2085
+210102,Ockelbo,2101
+210401,Hofors,2104
+210402,Torsåker,2104
+212101,Alfta-Ovanåker,2121
+213202,Nordanstigskusten,2132
+213205,Bergsjö,2132
+216101,Ljusdal-Ramsjö,2161
+216103,Los-Hamra,2161
+216104,Färila-Kårböle,2161
+216107,Järvsö,2161
+218001,Gävle,2180
+218003,Hamrånge,2180
+218004,Hedesunda,2180
+218005,Hille,2180
+218006,Valbo,2180
+218101,Sandviken,2181
+218102,Ovansjö-Järbo,2181
+218104,Årsunda-Österfärnebo,2181
+218201,Söderhamn-Sandarne,2182
+218203,Skog,2182
+218204,Ljusne,2182
+218205,Söderala,2182
+218206,Mo-Bergvik,2182
+218209,Norrala-Trönö,2182
+218303,Bollnäs,2183
+218304,Rengsjö,2183
+218306,Hanebo-Segersta,2183
+218309,Arbrå-Undersvik,2183
+218401,Hudiksvallsbygden,2184
+218405,Enånger-Njutånger,2184
+218408,Delsbo,2184
+218409,Bjuråker-Norrbo,2184
+218411,Forsa-Hög,2184
+226002,Borgsjö-Haverö,2260
+226004,Torp,2260
+226201,Timrå,2262
+226202,Ljustorp,2262
+226203,Hässjö,2262
+226204,Tynderö,2262
+228001,Härnösands domkyrkoförs.,2280
+228002,Högsjö,2280
+228003,Häggdånger,2280
+228004,Stigsjö,2280
+228005,Viksjö,2280
+228006,Säbrå,2280
+228007,Hemsö,2280
+228101,Sundsvall,2281
+228103,Skön,2281
+228104,Alnö,2281
+228105,Sättna,2281
+228106,Selånger,2281
+228107,Stöde,2281
+228108,Tuna-Attmar,2281
+228110,Njurunda,2281
+228111,Indal,2281
+228112,Holm,2281
+228113,Liden,2281
+228201,Gudmundrå,2282
+228202,Nora-Skog,2282
+228204,Nordingrå,2282
+228205,Vibyggerå,2282
+228206,Ullånger,2282
+228207,Bjärtrå,2282
+228208,Styrnäs,2282
+228209,Dal,2282
+228210,Torsåker,2282
+228211,Ytterlännäs,2282
+228301,Sollefteå,2283
+228302,Multrå-Sånga,2283
+228303,Graninge,2283
+228304,Långsele,2283
+228305,Ed,2283
+228306,Resele,2283
+228307,Helgum,2283
+228308,Ådals-Liden,2283
+228309,Junsele,2283
+228311,Boteå,2283
+228312,Överlännäs,2283
+228315,Ramsele-Edsele,2283
+228401,Örnsköldsvik,2284
+228402,Arnäs,2284
+228404,Anundsjö,2284
+228405,Skorped,2284
+228406,Sidensjö,2284
+228407,Nätra,2284
+228408,Själevad,2284
+228409,Mo,2284
+228410,Grundsunda,2284
+228411,Gideå-Trehörningsjö,2284
+228412,Björna,2284
+228414,Domsjö,2284
+228415,Gullänget,2284
+230301,Ragunda,2303
+230302,Fors,2303
+230303,Borgvattnet,2303
+230304,Stugun,2303
+230501,Bräcke-Nyhem,2305
+230503,Hällesjö-Håsjö,2305
+230506,"Revsund, Sundsjö, Bodsjö",2305
+230901,Rödön,2309
+230902,Näskott,2309
+230903,Aspås,2309
+230904,Ås,2309
+230906,Föllingebygden,2309
+230908,Offerdal,2309
+230910,Alsen,2309
+231301,Ström-Alanäs,2313
+231303,Gåxsjö,2313
+231304,Hammerdal,2313
+231305,Frostviken,2313
+231306,Fjällsjö,2313
+231307,Bodum,2313
+231308,Tåsjö,2313
+232101,Åre,2321
+232103,Västra Storsjöbygden,2321
+232104,Kall,2321
+232105,Undersåker,2321
+232601,Berg,2326
+232602,Hackås,2326
+232603,Oviken-Myssjö,2326
+232606,Åsarne,2326
+232608,Rätan-Klövsjö,2326
+236101,Svegsbygden,2361
+236105,Hedebygden,2361
+236107,Tännäs-Ljusnedal,2361
+236109,"Ytterhogdal, Överhogdal och Ängersjö",2361
+238001,Östersund,2380
+238002,"Frösö, Sunne och Norderö",2380
+238004,Näs,2380
+238005,Lockne,2380
+238006,Marieby,2380
+238007,Brunflo,2380
+238009,Häggenås-Lit-Kyrkås,2380
+240102,Nordmaling,2401
+240301,Bjurholm,2403
+240401,Vindeln,2404
+240901,Bygdeå,2409
+241702,Norsjö,2417
+241801,Malå,2418
+242101,Stensele,2421
+242103,Tärna,2421
+242201,Sorsele,2422
+242501,Dorotea-Risbäck,2425
+246001,Vännäs,2460
+246201,Vilhelmina,2462
+246301,Åsele-Fredrika,2463
+248001,Umeå stadsförs.,2480
+248002,Umeå landsförs.,2480
+248003,Tavelsjö,2480
+248004,Teg,2480
+248005,Ålidhem,2480
+248006,Holmsund,2480
+248007,Hörnefors,2480
+248009,Sävar-Holmön,2480
+248011,Umeå Maria,2480
+248101,Lycksele,2481
+248201,Skellefteå S:t Olov,2482
+248202,Skellefteå S:t Örjan,2482
+248203,Bureå,2482
+248204,Skellefteå landsförs.,2482
+248205,Jörn-Boliden,2482
+248206,Kågedalen,2482
+248207,Byske-Fällfors,2482
+248210,Lövånger,2482
+248211,Burträsk,2482
+250502,Arvidsjaur,2505
+250602,Arjeplog,2506
+251002,Jokkmokk,2510
+251301,Överkalix,2513
+251401,Kalix,2514
+251801,Övertorneå,2518
+252101,Pajala,2521
+252301,Gällivare,2523
+256002,Älvsby,2560
+258002,Luleå domkyrkoförs.,2580
+258003,Nederluleå,2580
+258004,Råneå,2580
+258102,Hortlax,2581
+258103,Piteå,2581
+258105,Norrfjärden,2581
+258201,Överluleå,2582
+258202,Gunnarsbyn,2582
+258203,Edefors,2582
+258204,Sävast,2582
+258301,Haparanda,2583
+258401,Jukkasjärvi,2584
+258402,Vittangi,2584
+258403,Karesuando,2584
