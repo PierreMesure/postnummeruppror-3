@@ -55,6 +55,68 @@ uv run download-addresses --cache cache/geotorget
 
 Run the test suite with `uv run pytest`.
 
+## Parish boundaries
+
+Download Svenska kyrkan's current parish-boundary shapefile (EPSG:3006) with:
+
+```bash
+uv run python scripts/download_parish_boundaries.py
+```
+
+The archive and extracted shapefile are stored under
+`data/parish-boundaries/`. Its `lkfkod` attribute joins to
+`reference/scb/parishes-2026.csv`; `namn` is the parish name. Use a different
+published version when required, for example
+`--effective-date 2027-01-01`.
+
+The 2026 boundary layer has 1,251 territorial parishes. Five SCB LKF entries
+have no boundary geometry (`018090`, `018092`, `018093`, `108002`, `148025`),
+so they cannot be assigned with a point-in-polygon join.
+
+## Enriched address pipeline
+
+With cached municipal GeoPackages and parish boundaries in place, build raw and
+parish-enriched Parquet partitions without loading the country into memory:
+
+```bash
+uv run build-address-pipeline --cache cache/geotorget
+```
+
+This writes one file per municipality, for example `raw/0114.parquet` and
+`enriched/0114.parquet`, under `data/address-pipeline/`. The enriched files add `parish_code`,
+`parish_match_status`. Parish, county, and municipality names stay in the SCB
+reference tables rather than being duplicated in every address row.
+
+## Compact postcode products
+
+Build current, physical-address-derived postcode products from the enriched
+partitions:
+
+```bash
+uv run build-address-products
+```
+
+The command streams municipal Parquet files and writes these small tables under
+`data/address-pipeline/products/`:
+
+- `postcode-post-towns.parquet`
+- `postcode-administrative-areas.parquet`
+- `postcode-parishes.parquet`
+- `postcode-centroids.parquet` (mean address coordinates in EPSG:3006)
+
+## Address ranges
+
+Build physical-address ranges using consecutive odd/even number runs and
+consecutive letter suffixes:
+
+```bash
+uv run build-address-ranges
+```
+
+This writes one municipal file per municipality under
+`data/address-pipeline/products/address-ranges/`, plus a manifest reporting the
+number of singleton ranges.
+
 ## What's next
 
 When it comes to geodata, Sweden is still in a very unique position. While most other EU countries have understood the value of (open) data as an infrastructure, our Swedish politicians have not and they have kept it locked behind high fees, undermining innovation, transparency and other open data benefits.

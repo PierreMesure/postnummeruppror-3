@@ -13,6 +13,9 @@ dependencies = [
 
 [project.scripts]
 download-addresses = "swedish_addresses.download:main"
+build-address-pipeline = "swedish_addresses.pipeline:main"
+build-address-products = "swedish_addresses.products:main"
+build-address-ranges = "swedish_addresses.ranges:main"
 
 [build-system]
 requires = ["uv_build>=0.11.29,<0.12"]
