@@ -117,6 +117,19 @@ This writes one municipal file per municipality under
 `data/address-pipeline/products/address-ranges/`, plus a manifest reporting the
 number of singleton ranges.
 
+## Named postcode coverage
+
+Build the current physical-address equivalent of a postcode/county/municipality/
+district/parish table:
+
+```bash
+uv run build-postcode-coverage
+```
+
+The output `data/address-pipeline/products/postcode-coverage.parquet` contains
+only observed combinations and `address_count`; human-readable administrative
+names are added from the small reference tables.
+
 ## What's next
 
 When it comes to geodata, Sweden is still in a very unique position. While most other EU countries have understood the value of (open) data as an infrastructure, our Swedish politicians have not and they have kept it locked behind high fees, undermining innovation, transparency and other open data benefits.
