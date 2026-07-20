@@ -12,6 +12,12 @@ import pandas as pd
 
 DEFAULT_ENRICHED_INPUT = Path("data/address-pipeline/enriched")
 DEFAULT_OUTPUT = Path("data/address-pipeline/products")
+PRODUCT_NAMES = (
+    "postcode-post-towns",
+    "postcode-administrative-areas",
+    "postcode-parishes",
+    "postcode-centroids",
+)
 
 
 def _counter() -> dict[str, float | int]:
@@ -32,8 +38,14 @@ def partition_files(enriched_input: Path) -> list[Path]:
     return sorted(enriched_input.glob("municipality_code=*/addresses.parquet"))
 
 
-def build_products(enriched_input: Path, output: Path) -> dict[str, int]:
+def build_products(
+    enriched_input: Path, output: Path, products: set[str] | None = None
+) -> dict[str, int]:
     """Create small product tables without loading all address partitions at once."""
+    selected = set(PRODUCT_NAMES if products is None else products)
+    unknown = selected - set(PRODUCT_NAMES)
+    if unknown:
+        raise ValueError(f"Unknown product(s): {', '.join(sorted(unknown))}")
     partitions = partition_files(enriched_input)
     if not partitions:
         raise FileNotFoundError(f"No enriched municipality files found in {enriched_input}")
@@ -94,10 +106,15 @@ def build_products(enriched_input: Path, output: Path) -> dict[str, int]:
         for (postcode, post_town), values in sorted(centroids.items())
     ]
 
-    pd.DataFrame(postcode_town_rows).to_parquet(output / "postcode-post-towns.parquet", index=False)
-    pd.DataFrame(postcode_area_rows).to_parquet(output / "postcode-administrative-areas.parquet", index=False)
-    pd.DataFrame(postcode_parish_rows).to_parquet(output / "postcode-parishes.parquet", index=False)
-    pd.DataFrame(centroid_rows).to_parquet(output / "postcode-centroids.parquet", index=False)
+    product_rows = {
+        "postcode-post-towns": postcode_town_rows,
+        "postcode-administrative-areas": postcode_area_rows,
+        "postcode-parishes": postcode_parish_rows,
+        "postcode-centroids": centroid_rows,
+    }
+    for product, rows in product_rows.items():
+        if product in selected:
+            pd.DataFrame(rows).to_parquet(output / f"{product}.parquet", index=False)
     counts = {
         "municipality_partitions": len(partitions),
         "postcode_post_town_rows": len(postcode_town_rows),
@@ -112,6 +129,7 @@ def build_products(enriched_input: Path, output: Path) -> dict[str, int]:
                 "source": str(enriched_input),
                 "coordinate_reference_system": "EPSG:3006",
                 "scope": "current physical addresses only",
+                "products": sorted(selected),
                 "counts": counts,
             },
             indent=2,
@@ -126,8 +144,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_ENRICHED_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--product", choices=PRODUCT_NAMES, action="append", dest="products")
     args = parser.parse_args()
-    counts = build_products(args.input, args.output)
+    counts = build_products(args.input, args.output, set(args.products) if args.products else None)
     print("Wrote compact postcode products: " + ", ".join(f"{key}={value:,}" for key, value in counts.items()))
 
 

@@ -35,3 +35,20 @@ def test_partition_files_supports_previous_hive_layout(tmp_path):
     (legacy / "addresses.parquet").touch()
 
     assert partition_files(tmp_path) == [legacy / "addresses.parquet"]
+
+
+def test_build_products_can_select_one_deliverable(tmp_path):
+    source = tmp_path / "enriched"
+    source.mkdir()
+    pd.DataFrame(
+        {
+            "postcode": ["11122"], "post_town": ["Stockholm"], "county_code": ["01"],
+            "municipality_code": ["0180"], "district_code": ["018001"],
+            "parish_code": ["018001"], "parish_match_status": ["matched"], "x": [1.0], "y": [2.0],
+        }
+    ).to_parquet(source / "0180.parquet", index=False)
+
+    build_products(source, tmp_path / "products", {"postcode-centroids"})
+
+    assert (tmp_path / "products/postcode-centroids.parquet").is_file()
+    assert not (tmp_path / "products/postcode-parishes.parquet").exists()
