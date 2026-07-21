@@ -21,40 +21,6 @@ cp .env.example .env
 uv sync
 ```
 
-## Download all municipalities
-
-```bash
-uv run download-addresses
-```
-
-This writes `data/swedish_addresses.parquet`, with these columns:
-
-| Column | Meaning |
-| --- | --- |
-| `municipality_code` | Four-digit municipality code from the STAC collection |
-| `postcode` | Address postcode |
-| `x` | Easting, EPSG:3006 |
-| `y` | Northing, EPSG:3006 |
-
-Use `--output` to choose a location. For a small credentialed smoke test, use a
-single municipality:
-
-```bash
-uv run download-addresses --municipality 0180 --output data/stockholm.parquet
-```
-
-## Cache GeoPackages
-
-Pass `--cache` to retain each municipal GeoPackage. The downloader uses the
-municipality code as the filename (for example, `cache/geotorget/0180.gpkg`) and
-uses that file whenever it already exists, avoiding a repeat download:
-
-```bash
-uv run download-addresses --cache cache/geotorget
-```
-
-Run the test suite with `uv run pytest`.
-
 ## Parish boundaries
 
 Download Svenska kyrkan's current parish-boundary shapefile (EPSG:3006) with:
@@ -75,29 +41,37 @@ so they cannot be assigned with a point-in-polygon join.
 
 ## Enriched address pipeline
 
-With cached municipal GeoPackages and parish boundaries in place, build raw and
-parish-enriched Parquet partitions without loading the country into memory:
+Build raw and parish-enriched Parquet partitions without loading the country
+into memory:
 
 ```bash
 uv run build-address-pipeline --cache cache/geotorget
 ```
+
+The command reuses each existing `cache/geotorget/<municipality>.gpkg` and
+downloads/cache-writes only missing GeoPackages before processing them. It
+contacts Geotorget to discover the nationwide list only when the cache is not
+already complete; an explicit fully cached `--municipality 0180` run needs no
+network request.
 
 This writes one file per municipality, for example `raw/0114.parquet` and
 `enriched/0114.parquet`, under `data/address-pipeline/`. The enriched files add `parish_code`,
 `parish_match_status`. Parish, county, and municipality names stay in the SCB
 reference tables rather than being duplicated in every address row.
 
+Run the test suite with `uv run pytest`.
+
 ## Compact postcode products
 
-Build current, physical-address-derived postcode products from the enriched
-partitions:
+Build current, physical-address-derived postcode products:
 
 ```bash
 uv run build-address-products
 ```
 
-The command streams municipal Parquet files and writes these small tables under
-`data/address-pipeline/products/`:
+Each product command first acquires and enriches the municipal GeoPackages,
+reusing `cache/geotorget/` by default, then streams municipal Parquet files and
+writes these small tables under `data/address-pipeline/products/`:
 
 - `postcode-post-towns.parquet`
 - `postcode-administrative-areas.parquet`
@@ -142,9 +116,10 @@ uv run build-postcode-coverage
 
 `build-postcode-products` remains available when rebuilding the four compact
 postcode tables together; `build-address-products` is retained as a backwards-
-compatible alias.
+compatible alias. Pass `--cache DIRECTORY` to any build command to use another
+GeoPackage cache.
 
-Run all current address-derived products after the enriched-address pipeline
+Run all current address-derived products, including acquisition and enrichment,
 with:
 
 ```bash

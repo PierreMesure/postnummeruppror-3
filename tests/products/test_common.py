@@ -1,6 +1,6 @@
 import pandas as pd
 
-from swedish_addresses.products import build_products, partition_files
+from swedish_addresses.products.common import build_products, partition_files
 
 
 def test_build_products_aggregates_municipal_partitions(tmp_path):

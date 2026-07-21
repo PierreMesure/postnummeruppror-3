@@ -1,22 +1,14 @@
 import pandas as pd
 
-from swedish_addresses.ranges import ranges_for_addresses
+from swedish_addresses.products.address_ranges import ranges_for_addresses
 
 
 def test_ranges_join_only_contiguous_numbers_and_letters():
     shared = {
-        "address_area": "Testgatan",
-        "address_type": "Gatuadressplats",
-        "postcode": "11122",
-        "post_town": "Stockholm",
-        "county_code": "01",
-        "municipality_code": "0180",
-        "district_code": "018001",
-        "parish_code": "018001",
-        "parish_match_status": "matched",
-        "location_suffix": None,
-        "location_suffix_number": None,
-        "deviates_from_standard": False,
+        "address_area": "Testgatan", "address_type": "Gatuadressplats", "postcode": "11122",
+        "post_town": "Stockholm", "county_code": "01", "municipality_code": "0180",
+        "district_code": "018001", "parish_code": "018001", "parish_match_status": "matched",
+        "location_suffix": None, "location_suffix_number": None, "deviates_from_standard": False,
     }
     frame = pd.DataFrame(
         [

@@ -10,8 +10,9 @@ from pathlib import Path
 import geopandas as gpd
 import pandas as pd
 
-from .download import ADDRESS_LAYER
-from .products import DEFAULT_ENRICHED_INPUT, partition_files
+from ..pipeline.download import ADDRESS_LAYER
+from ..pipeline.enrich import add_pipeline_options, prepare_enriched_addresses
+from .common import DEFAULT_ENRICHED_INPUT, partition_files
 
 
 DEFAULT_CACHE = Path("cache/geotorget")
@@ -109,10 +110,11 @@ def build_postcode_coverage(enriched_input: Path, cache_dir: Path, reference_dir
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_ENRICHED_INPUT)
-    parser.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
     parser.add_argument("--reference", type=Path, default=DEFAULT_REFERENCE)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    add_pipeline_options(parser)
     args = parser.parse_args()
+    prepare_enriched_addresses(args, args.input)
     rows = build_postcode_coverage(args.input, args.cache, args.reference, args.output)
     print(f"Wrote {rows:,} postcode coverage rows to {args.output}")
 

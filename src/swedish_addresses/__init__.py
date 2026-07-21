@@ -1,2 +1,1 @@
-"""Download Swedish address postcodes and coordinates from Geotorget."""
-
+"""Open, address-derived Swedish postcode data products."""

@@ -10,7 +10,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from .products import DEFAULT_ENRICHED_INPUT, partition_files
+from ..pipeline.enrich import add_pipeline_options, prepare_enriched_addresses
+from .common import DEFAULT_ENRICHED_INPUT, partition_files
 
 
 DEFAULT_OUTPUT = Path("data/address-pipeline/products/address-ranges")
@@ -51,7 +52,7 @@ def _text(value: object) -> str:
 
 
 def ranges_for_addresses(addresses: pd.DataFrame) -> pd.DataFrame:
-    """Build PNS-like ranges for what can be proven from physical addresses.
+    """Build address ranges for what can be proven from physical addresses.
 
     Numeric addresses are joined only across consecutive odd/even values. Letter
     suffixes are joined only across consecutive A-Z values for the same number.
@@ -216,8 +217,13 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--skip-existing", action="store_true", help="Resume a partial build without replacing municipal files.")
     parser.add_argument("--report", action="store_true", help="Write a report for existing range files without rebuilding them.")
+    add_pipeline_options(parser)
     args = parser.parse_args()
-    counts = write_range_report(args.output) if args.report else build_address_ranges(args.input, args.output, args.skip_existing)
+    if args.report:
+        counts = write_range_report(args.output)
+    else:
+        prepare_enriched_addresses(args, args.input)
+        counts = build_address_ranges(args.input, args.output, args.skip_existing)
     print(
         "Wrote {ranges:,} ranges from {source_addresses:,} addresses; "
         "{singleton_ranges:,} are single-address ranges.".format(**counts)

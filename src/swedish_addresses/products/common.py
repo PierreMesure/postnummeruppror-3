@@ -1,4 +1,4 @@
-"""Derive compact, current postcode products from enriched address partitions."""
+"""Shared builders for compact, current postcode products."""
 
 from __future__ import annotations
 
@@ -8,6 +8,8 @@ from collections import defaultdict
 from pathlib import Path
 
 import pandas as pd
+
+from ..pipeline.enrich import add_pipeline_options, prepare_enriched_addresses
 
 
 DEFAULT_ENRICHED_INPUT = Path("data/address-pipeline/enriched")
@@ -145,7 +147,9 @@ def main() -> None:
     parser.add_argument("--input", type=Path, default=DEFAULT_ENRICHED_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--product", choices=PRODUCT_NAMES, action="append", dest="products")
+    add_pipeline_options(parser)
     args = parser.parse_args()
+    prepare_enriched_addresses(args, args.input)
     counts = build_products(args.input, args.output, set(args.products) if args.products else None)
     print("Wrote compact postcode products: " + ", ".join(f"{key}={value:,}" for key, value in counts.items()))
 

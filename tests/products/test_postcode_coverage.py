@@ -1,6 +1,6 @@
 import pandas as pd
 
-from swedish_addresses.coverage import add_names
+from swedish_addresses.products.postcode_coverage import add_names
 
 
 def test_add_names_joins_small_reference_tables(tmp_path):

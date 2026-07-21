@@ -12,17 +12,16 @@ dependencies = [
 ]
 
 [project.scripts]
-download-addresses = "swedish_addresses.download:main"
-build-address-pipeline = "swedish_addresses.pipeline:main"
-build-address-products = "swedish_addresses.products:main"
-build-postcode-products = "swedish_addresses.products:main"
-build-address-ranges = "swedish_addresses.ranges:main"
-build-postcode-coverage = "swedish_addresses.coverage:main"
-build-postcode-post-towns = "swedish_addresses.product_commands:postcode_post_towns"
-build-postcode-administrative-areas = "swedish_addresses.product_commands:postcode_administrative_areas"
-build-postcode-parishes = "swedish_addresses.product_commands:postcode_parishes"
-build-postcode-centroids = "swedish_addresses.product_commands:postcode_centroids"
-build-all-products = "swedish_addresses.all_products:main"
+build-address-pipeline = "swedish_addresses.pipeline.enrich:main"
+build-address-products = "swedish_addresses.products.common:main"
+build-postcode-products = "swedish_addresses.products.common:main"
+build-address-ranges = "swedish_addresses.products.address_ranges:main"
+build-postcode-coverage = "swedish_addresses.products.postcode_coverage:main"
+build-postcode-post-towns = "swedish_addresses.products.commands:postcode_post_towns"
+build-postcode-administrative-areas = "swedish_addresses.products.commands:postcode_administrative_areas"
+build-postcode-parishes = "swedish_addresses.products.commands:postcode_parishes"
+build-postcode-centroids = "swedish_addresses.products.commands:postcode_centroids"
+build-all-products = "swedish_addresses.products.all:main"
 
 [build-system]
 requires = ["uv_build>=0.11.29,<0.12"]

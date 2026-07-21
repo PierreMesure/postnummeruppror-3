@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from .products import main as products_main
+from .common import main as products_main
 
 
 def _product_main(product: str) -> None:

@@ -2,7 +2,7 @@ import pandas as pd
 from geopandas import GeoDataFrame
 from shapely import box
 
-from swedish_addresses.pipeline import enrich_with_parishes, partition_path
+from swedish_addresses.pipeline.enrich import enrich_with_parishes, partition_path
 
 
 def test_partition_path_is_a_flat_municipality_file(tmp_path):

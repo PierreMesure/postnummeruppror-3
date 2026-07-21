@@ -10,14 +10,13 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import re
 import warnings
 from pathlib import Path
 
 import geopandas as gpd
 import pandas as pd
 
-from .download import ADDRESS_LAYER
+from .download import ADDRESS_LAYER, configured_client, gpkg_for_dataset, municipality_sources
 
 
 DEFAULT_RAW_OUTPUT = Path("data/address-pipeline/raw")
@@ -187,18 +186,6 @@ def enrich_with_parishes(addresses: pd.DataFrame, parishes: gpd.GeoDataFrame) ->
     return pd.DataFrame(joined.drop(columns=["geometry", "index_right"]))
 
 
-def municipality_codes(cache_dir: Path, requested: list[str] | None) -> list[str]:
-    available = sorted(path.stem for path in cache_dir.glob("*.gpkg") if re.fullmatch(r"\d{4}", path.stem))
-    if not available:
-        raise FileNotFoundError(f"No municipal GeoPackages found in {cache_dir}")
-    if requested is None:
-        return available
-    missing = set(requested) - set(available)
-    if missing:
-        raise ValueError(f"Missing cached GeoPackage(s): {', '.join(sorted(missing))}")
-    return sorted(set(requested))
-
-
 def build_pipeline(
     cache_dir: Path,
     raw_output: Path,
@@ -210,10 +197,13 @@ def build_pipeline(
     """Build raw and enriched partitions, retaining one municipality at a time."""
     parishes = load_parishes(parish_boundaries, parish_reference)
     counts = {"municipalities": 0, "raw_addresses": 0, "matched_addresses": 0, "unmatched_addresses": 0}
-    codes = municipality_codes(cache_dir, requested_codes)
-    for index, code in enumerate(codes, start=1):
-        print(f"[{index}/{len(codes)}] Reading {code}")
-        raw = raw_addresses_from_gpkg((cache_dir / f"{code}.gpkg").read_bytes(), code)
+    client = configured_client()
+    sources = municipality_sources(client, cache_dir, requested_codes)
+    for index, (code, title) in enumerate(sources, start=1):
+        gpkg_bytes, cached = gpkg_for_dataset(client, code, cache_dir)
+        source = "Using cached" if cached else "Downloaded"
+        print(f"[{index}/{len(sources)}] {source} {code} {title}")
+        raw = raw_addresses_from_gpkg(gpkg_bytes, code)
         write_partition(raw, raw_output, code)
         enriched = enrich_with_parishes(raw, parishes)
         write_partition(enriched, enriched_output, code)
@@ -242,23 +232,33 @@ def build_pipeline(
     return counts
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--cache", type=Path, required=True, metavar="DIRECTORY")
+def add_pipeline_options(parser: argparse.ArgumentParser) -> None:
+    """Add shared GeoPackage acquisition and enrichment options to a parser."""
+    parser.add_argument("--cache", type=Path, default=Path("cache/geotorget"))
     parser.add_argument("--raw-output", type=Path, default=DEFAULT_RAW_OUTPUT)
-    parser.add_argument("--enriched-output", type=Path, default=DEFAULT_ENRICHED_OUTPUT)
     parser.add_argument("--parish-boundaries", type=Path, default=DEFAULT_PARISH_BOUNDARIES)
     parser.add_argument("--parish-reference", type=Path, default=DEFAULT_PARISH_REFERENCE)
     parser.add_argument("--municipality", action="append", dest="municipality_codes", metavar="CODE")
-    args = parser.parse_args()
-    counts = build_pipeline(
+
+
+def prepare_enriched_addresses(args: argparse.Namespace, enriched_output: Path) -> dict[str, int]:
+    """Acquire, cache, and enrich the source addresses for a product command."""
+    return build_pipeline(
         args.cache,
         args.raw_output,
-        args.enriched_output,
+        enriched_output,
         args.parish_boundaries,
         args.parish_reference,
         args.municipality_codes,
     )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--enriched-output", type=Path, default=DEFAULT_ENRICHED_OUTPUT)
+    add_pipeline_options(parser)
+    args = parser.parse_args()
+    counts = prepare_enriched_addresses(args, args.enriched_output)
     print(
         "Wrote {raw_addresses:,} addresses across {municipalities} municipalities "
         "({matched_addresses:,} parish matches, {unmatched_addresses:,} unmatched).".format(**counts)
